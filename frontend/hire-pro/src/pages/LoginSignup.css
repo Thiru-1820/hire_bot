@@ -1,0 +1,108 @@
+.login-signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../assets/bg.jpg"); /* Path to background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.login-signup-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+  z-index: 1;
+}
+
+.login-box {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(20px); /* Blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance glass effect */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e2fdff;
+  font-family: "Arial", sans-serif;
+  text-shadow: 0 0 8px #9bb1ff;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #bfd7ff;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(84, 101, 255, 0.8), 0 0 20px rgba(84, 101, 255, 0.6);
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #5465ff; /* Theme color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 0 0 8px #788bff;
+  box-shadow: 0 0 20px rgba(84, 101, 255, 0.8), 0 0 40px rgba(84, 101, 255, 0.6);
+}
+
+.toggle-text {
+  margin-top: 1em;
+  color: #fff;
+}
+
+.toggle-link {
+  cursor: pointer;
+  color: #5465ff;
+}
+
+.login-button:hover {
+  background-color: #788bff; /* Slightly darker on hover */
+  box-shadow: 0 0 30px rgba(84, 101, 255, 1), 0 0 60px rgba(84, 101, 255, 0.9);
+}
+
+.login-button:active {
+  background-color: #5465ff;
+  box-shadow: 0 0 15px rgba(84, 101, 255, 1), 0 0 30px rgba(84, 101, 255, 0.7);
+}
+
+.error-message {
+  color: red;
+}

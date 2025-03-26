@@ -1,0 +1,54 @@
+/* CodingRoundPage.css */
+.coding-round-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.coding-round-page h1 {
+  text-align: center;
+  color: #333;
+}
+
+.coding-question {
+  margin-bottom: 20px;
+}
+
+.coding-question h3 {
+  color: #007bff;
+}
+
+.editor-container {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.output-container {
+  margin-top: 20px;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.output-container pre {
+  color: green;
+  font-size: 14px;
+}

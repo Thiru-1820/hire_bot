@@ -1,5 +1,5 @@
-FROM llama3
-FROM mistral
+FROM WizardLM2
+FROM mcq
 
 PARAMETER temperature 0.7
 PARAMETER top_p 0.9
